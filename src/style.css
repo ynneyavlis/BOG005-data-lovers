@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&family=Rubik+Dirt&family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+* html body {
+  min-width: 100vw;
+}
+
+/* Header */
+
+.logo {
+  width: 85px;
+  height: 56px;
+  margin-left: 10px;
+  margin-top: 9px;
+}
+
+header {
+  background-color: #5bbaf0;
+  width: 100%;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  min-width: 100%;
+}
+
+.icons {
+  display: flex;
+  gap: 18px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.iconImg {
+  min-width: 40px;
+  max-height: 40px;
+}
+
+.navegation {
+  display: flex;
+  gap: 18px;
+  margin-right: 10px;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  font-family: "Rubik Dirt";
+  font-size: 25px;
+  color: rgb(118, 22, 227);
+}
+
+@media (min-width: 601px) {
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navegation,
+  .title {
+    display: none;
+  }
+  .navegation > li {
+    text-decoration: none;
+  }
+}
+
+/* main */
+
+.totoroImg {
+  width: 100%;
+  height: auto;
+}
+
+.search {
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  max-width: 400px;
+  /*  */
+
+  position: relative;
+}
+
+.inputSearch {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#searchIcon1,
+#searchIcon2 {
+  cursor: pointer;
+}
+
+.welcomeContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: "Gotu";
+  font-size: 17px;
+  color: #af94fd;
+}
+
+@media (min-width: 601px) {
+  #searchIcon2 {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .welcomeContainer {
+    font-size: 30px;
+  }
+}
+
+.genre {
+  background-color: #5bbaf0;
+  border-radius: 15px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spanGenre {
+  height: 20px;
+  color: white;
+}
+
+.genreContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .genreContainer {
+    display: none;
+  }
+}
+
+#menu {
+  background-color: aqua;
+  display: none;
+}
+
+.hideMenu {
+  display: none;
+}
+
+.showMenu {
+  display: block;
+}

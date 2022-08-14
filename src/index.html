@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Ghibli Wiki</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/totoroLogo.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <header>
+      <figure class="logoContainer">
+        <img alt="Studio Ghibli Logo" class="logo" src="img/logo.svg" />
+        <span class="title">STUDIO GHIBLI WIKI</span>
+      </figure>
+      <nav class="icons">
+        <img alt="lightbulb icon" class="iconImg" src="img/foco.svg" />
+        <img alt="Menu icon" class="iconImg" src="img/menu.svg" />
+        <img alt="Information icon" class="iconImg" src="img/about.svg" />
+      </nav>
+      <ul class="navegation">
+        <li>CURIOSITIES</li>
+        <li>SORT</li>
+        <li>ABOUT</li>
+      </ul>
+    </header>
+    <main>
+      <figure>
+        <img
+          alt="Imagen de Studio Ghibli"
+          class="totoroImg"
+          src="img/totoroImg.webp"
+        />
+      </figure>
+      <div class="welcomeContainer">
+        <span>Welcome to the Studio Ghibli Wiki!</span>
+      </div>
+      <div class="searchContainer">
+        <div class="search">
+          <span class="material-symbols-outlined" id="searchIcon1">
+            search
+          </span>
+          <input type="text" class="inputSearch" />
+          <span class="material-symbols-outlined" id="searchIcon2">
+            filter_list
+          </span>
+        </div>
+      </div>
+      <ul id="menu">
+        <li>ADVENTURE</li>
+        <li>DRAMA</li>
+        <li>FANTASY</li>
+        <li>COMEDY</li>
+        <li>ROMANCE</li>
+        <li>BELIC</li>
+        <li>EMOTIONAL</li>
+        <li>ACTION</li>
+      </ul>
+      <div class="genreContainer">
+        <div class="genre">
+          <span class="spanGenre">ADVENTURE</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">DRAMA</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">FANTASY</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">COMEDY</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">ROMANCE</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">BELIC</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">EMOTIONAL</span>
+        </div>
+        <div class="genre">
+          <span class="spanGenre">ACTION</span>
+        </div>
+      </div>
+    </main>
   </body>
+  <script src="main.js" type="module"></script>
 </html>
