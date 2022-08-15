@@ -8,23 +8,29 @@
     <link rel="icon" href="img/totoroLogo.png" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
     />
   </head>
   <body>
-    <header>
-      <figure class="logoContainer">
-        <img alt="Studio Ghibli Logo" class="logo" src="img/logo.svg" />
+    <header id="header">
+      <section class="navContainer">
+        <figure class="logoContainer">
+          <img alt="Studio Ghibli Logo" class="logo" src="img/logo.svg" />
+        </figure>
         <span class="title">STUDIO GHIBLI WIKI</span>
-      </figure>
+      </section>
       <nav class="icons">
-        <img alt="lightbulb icon" class="iconImg" src="img/foco.svg" />
-        <img alt="Menu icon" class="iconImg" src="img/menu.svg" />
-        <img alt="Information icon" class="iconImg" src="img/about.svg" />
+        <i class="fi fi-rr-bulb iconImg"></i>
+        <i class="fi fi-sr-apps iconImg"></i>
+        <i class="fi fi-rr-info iconImg"></i>
       </nav>
       <ul class="navegation">
         <li>CURIOSITIES</li>
@@ -33,37 +39,38 @@
       </ul>
     </header>
     <main>
-      <figure>
+      <div class="welcomeContainer">
+        <span>Welcome to the Studio Ghibli Wiki!</span>
+      </div>
+      <figure class="totoroContainer">
         <img
           alt="Imagen de Studio Ghibli"
           class="totoroImg"
           src="img/totoroImg.webp"
         />
       </figure>
-      <div class="welcomeContainer">
-        <span>Welcome to the Studio Ghibli Wiki!</span>
-      </div>
       <div class="searchContainer">
         <div class="search">
-          <span class="material-symbols-outlined" id="searchIcon1">
-            search
-          </span>
+          <i class="fi fi-rr-search" id="searchIcon1"></i>
+
           <input type="text" class="inputSearch" />
-          <span class="material-symbols-outlined" id="searchIcon2">
-            filter_list
-          </span>
+          <i class="fi fi-sr-settings-sliders" id="searchIcon2"></i>
         </div>
       </div>
-      <ul id="menu">
-        <li>ADVENTURE</li>
-        <li>DRAMA</li>
-        <li>FANTASY</li>
-        <li>COMEDY</li>
-        <li>ROMANCE</li>
-        <li>BELIC</li>
-        <li>EMOTIONAL</li>
-        <li>ACTION</li>
-      </ul>
+      <div class="menuContainer1">
+        <div class="menuContainer2">
+          <ul class="menu">
+            <li>ADVENTURE</li>
+            <li>DRAMA</li>
+            <li>FANTASY</li>
+            <li>COMEDY</li>
+            <li>ROMANCE</li>
+            <li>BELIC</li>
+            <li>EMOTIONAL</li>
+            <li>ACTION</li>
+          </ul>
+        </div>
+      </div>
       <div class="genreContainer">
         <div class="genre">
           <span class="spanGenre">ADVENTURE</span>
@@ -90,6 +97,33 @@
           <span class="spanGenre">ACTION</span>
         </div>
       </div>
+      <section class="movieContainer" id="movieContainer__2">
+        <div class="movie">
+          <figure>
+            <img
+              alt="Portada de Castle in the sky"
+              class="movieImg"
+              src="img/CastleInTheSky.webp"
+            />
+          </figure>
+          <span class="titleMovie">Castle In The Sky</span>
+          <span class="fecha">1986</span>
+        </div>
+      </section>
+      <footer>
+        <div class="iconFooterContainer">
+          <i class="fi fi-brands-facebook iconFooter"></i>
+          <i class="fi fi-brands-twitter iconFooter"></i>
+          <i class="fi fi-brands-instagram iconFooter"></i>
+          <i class="fi fi-brands-youtube iconFooter"></i>
+        </div>
+        <span class="copyright"
+          >© 2022 Studio Ghilbli All Rights Reserved
+        </span>
+        <div class="goUp">
+          <a href="#header"><i class="fi fi-sr-arrow-square-up"></i></a>
+        </div>
+      </footer>
     </main>
   </body>
   <script src="main.js" type="module"></script>
