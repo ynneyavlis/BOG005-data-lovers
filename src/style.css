@@ -483,24 +483,23 @@ footer {
   }
 }
 
-.Movi1Container{
+.Movi1Container {
   display: flex;
   margin: 5%;
   line-height: 1.5em;
 }
-.Movie1Sky{
+.Movie1Sky {
   margin-right: 3%;
 }
-.caja1{ width: 40%;
-
+.caja1 {
+  width: 40%;
 }
-.peoplesky{
+.peoplesky {
   color: #ffffff;
   display: flex;
   justify-content: center;
-  
 }
-.people{
+.people {
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -511,7 +510,42 @@ footer {
   border-radius: 20px;
   padding-bottom: 20px;
 }
-.peopleImg{
+.peopleImg {
   margin-top: 10%;
   width: 70%;
+}
+
+/* curiosities */
+
+.curiositiesTextContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.curiositiesText {
+  width: 80%;
+  text-align: justify;
+}
+
+@media (min-width: 800px) {
+  .curiositiesText {
+    font-size: large;
+    font-size: 40px;
+  }
+}
+
+.chartContainer {
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+@media (min-width: 600px) {
+  .chartContainer {
+    padding: 0px 50px;
+    height: 60vh;
+  }
 }
