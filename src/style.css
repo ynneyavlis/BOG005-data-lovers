@@ -482,3 +482,38 @@ footer {
     align-items: flex-start;
   }
 }
+
+/* curiosities */
+
+.curiositiesTextContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.curiositiesText {
+  width: 80%;
+  text-align: justify;
+}
+
+@media (min-width: 800px) {
+  .curiositiesText {
+    font-size: large;
+    font-size: 40px;
+  }
+}
+
+.chartContainer {
+  position: relative;
+  margin: auto;
+  height: 40vh;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+@media (min-width: 600px) {
+  .chartContainer {
+    padding: 0px 50px;
+    height: 60vh;
+  }
+}

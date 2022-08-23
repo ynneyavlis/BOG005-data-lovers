@@ -1,5 +1,4 @@
 import data from "./data/ghibli/ghibli.js";
-console.log(data.films);
 
 //responsive
 let menu = document.getElementsByClassName("menu")[0];
