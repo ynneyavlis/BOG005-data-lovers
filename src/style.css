@@ -482,3 +482,36 @@ footer {
     align-items: flex-start;
   }
 }
+
+.Movi1Container{
+  display: flex;
+  margin: 5%;
+  line-height: 1.5em;
+}
+.Movie1Sky{
+  margin-right: 3%;
+}
+.caja1{ width: 40%;
+
+}
+.peoplesky{
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  
+}
+.people{
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1583b6;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.peopleImg{
+  margin-top: 10%;
+  width: 70%;
+}

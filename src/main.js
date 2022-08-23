@@ -30,13 +30,34 @@ for (let i = 0; i < data.films.length; i++) {
             <img
               alt="Portada de ${data.films[i].title}"
               class="movieImg"
-              src="${data.films[i].poster}"
-             />
+              src="${data.films[i].poster}"/>
           </figure>
           <span class="titleMovie">${data.films[i].title}</span>
           <span class="fecha">${data.films[i].release_date}</span>
-        </div>
-     `;
+          </div>`;
 }
 
 document.getElementById("movieContainer__2").innerHTML = output;
+
+data.films.people;
+let SalidaFicha = "";
+for (let i = 0; i < data.films.people.length; i++) {
+  SalidaFicha =
+    SalidaFicha +
+    `<div class="people">
+          <figure>
+            <img
+              alt="personaje ${data.films.people[i].people}"
+              class="peopleImg"
+              src="${data.films.people[i].img}"/>
+          </figure>
+          <span class="peoplesky">${data.films.people[i].peoplesky}</span>
+          <span class="Gender">${data.films.people[i].Gender}</span>
+          <span class="age">${data.films.people[i].age}</span>
+          <span class="eye_color">${data.films.people[i].eye_color}</span>
+          <span class="hair_color">${data.films.people[i].hair_color}</span>
+          <span class="specie">${data.films.peoples[i].specie}</span>        
+        </div>
+     `;
+}
+document.getElementById("peoples").innerHTML = SalidaFicha;
