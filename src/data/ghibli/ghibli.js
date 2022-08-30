@@ -9,9 +9,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Isao Takahata",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNDFhZmY2NTgtMzljYy00MTlhLTgyMjItNTEwZWJkYThhYzkyXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
       release_date: "1986",
       rt_score: "95",
+      genre: "Adventure, Drama, Fantasy",
       people: [
         {
           id: "fe93adf2-2f3a-4ec4-9f68-5422f1b87c01",
@@ -206,9 +207,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Hayao Miyazaki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
       release_date: "1988",
       rt_score: "93",
+      genre: "Adventure, Fantasy",
       people: [
         {
           id: "986faac6-67e3-4fb8-a9ee-bad077c2e7fe",
@@ -350,9 +352,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Hayao Miyazaki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/b7c6b9756d1fcc53987ae7ba88b1cb04d3daa47db2ffa11f88cbc57a8deb7683._RI_V_TTW_.jpg",
       release_date: "1989",
       rt_score: "96",
+      genre: "Adventure, fantasy",
       people: [
         {
           id: "4151abc6-1a9e-4e6a-5678-aac05ra641js",
@@ -472,9 +475,10 @@ export default {
       director: "Isao Takahata",
       producer: "Toru Hara",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmY2NjUzNDQtNTgxNC00M2Q4LTljOWQtMjNjNDBjNWUxNmJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
       release_date: "1988",
       rt_score: "97",
+      genre: "Drama, Belic, Emotional",
       people: [
         {
           id: "8cb959a8-1959-42f3-bb33-07d7a2e6b830",
@@ -538,9 +542,10 @@ export default {
       director: "Isao Takahata",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
+        "https://image.tmdb.org/t/p/original/tOSnFE9e82iH3ZAzSTtuOkBsabJ.jpg",
       release_date: "1991",
       rt_score: "100",
+      genre: "Comedy, Drama",
       people: [
         {
           id: "d0bb7b5f-3bf0-46c8-959d-0299b3252bd8",
@@ -673,10 +678,10 @@ export default {
         "Porco Rosso, known in Japan as Crimson Pig (Kurenai no Buta) is the sixth animated film by Hayao Miyazaki and released in 1992. You're introduced to an Italian World War I fighter ace, now living as a freelance bounty hunter chasing 'air pirates' in the Adriatic Sea. He has been given a curse that changed his head to that of a pig. Once called Marco Pagot, he is now known to the world as 'Porco Rosso', Italian for 'Red Pig.'",
       director: "Hayao Miyazaki",
       producer: "Toshio Suzuki",
-      poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg",
+      poster: "https://m.media-amazon.com/images/I/81+8ey686OL._SL1500_.jpg",
       release_date: "1992",
       rt_score: "94",
+      genre: "Adventure, Action, Romance",
       people: [
         {
           id: "6523068d-f5a9-4150-bf5b-76abe6fb42c3",
@@ -797,9 +802,10 @@ export default {
       director: "Isao Takahata",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg",
+        "https://m.media-amazon.com/images/M/MV5BYjBkODU2MjEtMjRhZi00M2M2LTg4ZjgtMGM0NjFiZTdjMzZhXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_.jpg",
       release_date: "1994",
       rt_score: "78",
+      genre: "Drama, Fantasy, Comedy, Emotional",
       people: [
         {
           id: "575d6943-f9da-445e-8e77-e118c3924a1d",
@@ -873,9 +879,10 @@ export default {
       director: "Yoshifumi Kondō",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/7/7b/Whisper_of_the_Heart.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZDg0MWNmNjktMGEwZC00ZDlmLWI1MTUtMDBmNjQzMWM2NjBjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       release_date: "1995",
       rt_score: "91",
+      genre: "Drama, Comedy, Romance, Emotional",
       people: [
         {
           id: "42a69bf6-b5e8-42b1-b05a-12c3d05e7c1e",
@@ -989,9 +996,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg",
+        "https://www.geekartbook.com/wp-content/uploads/2021/04/The-Art-of-Princess-Mononoke-1.jpg",
       release_date: "1997",
       rt_score: "92",
+      genre: "Adventure, Fantasy",
       people: [
         {
           id: "ba924631-068e-4436-b6de-f3283fa848f0",
@@ -1133,9 +1141,10 @@ export default {
       director: "Isao Takahata",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbors_the_Yamadas.jpg",
+        "http://4.bp.blogspot.com/-IbWytZcJw5g/VQc3h4_QUiI/AAAAAAAAOOM/dn8k7TdhAg8/s1600/tuKO2PLGDcJj5vpfAYKSQcnLEpD.jpg",
       release_date: "1999",
       rt_score: "75",
+      genre: "Comedy, Fantasy",
       people: [
         {
           id: "7b3324ad-0ac9-417d-9905-ac001f6b7b1a",
@@ -1199,9 +1208,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
+        "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       release_date: "2001",
       rt_score: "97",
+      genre: "Adventure, Fantasy",
       people: [
         {
           id: "134a568b-ac18-4696-a53e-4f0757d1c037",
@@ -1334,9 +1344,10 @@ export default {
       director: "Hiroyuki Morita",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Cat_Returns.jpg",
+        "https://img1.ak.crunchyroll.com/i/spire1/1ff8f36458676bbff768d58efe93a7021654342488_main.jpg",
       release_date: "2002",
       rt_score: "89",
+      genre: "Adventure, Fantasy, Comedy",
       people: [
         {
           id: "6b3facea-ea33-47b1-96ce-3fc737b119b8",
@@ -1467,9 +1478,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg",
+        "https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
       release_date: "2004",
       rt_score: "87",
+      genre: "Adventure, Drama, Romance",
       people: [
         {
           id: "fa9b410f-cad4-457d-ac71-86b0afa6cf0a",
@@ -1607,9 +1619,10 @@ export default {
       director: "Gorō Miyazaki",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/%C3%96v%C3%A4rlden.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZGFlN2FhYTktZGYzNi00MzllLWFlOTAtY2ExNjRjZjhkZWM2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
       release_date: "2006",
       rt_score: "41",
+      genre: "Adventure, Fantasy",
       people: [
         {
           id: "68df798d-f73d-4c70-b4ad-05dd84910436",
@@ -1712,10 +1725,10 @@ export default {
         "The son of a sailor, 5-year old Sosuke lives a quiet life on an oceanside cliff with his mother Lisa. One fateful day, he finds a beautiful goldfish trapped in a bottle on the beach and upon rescuing her, names her Ponyo. But she is no ordinary goldfish. The daughter of a masterful wizard and a sea goddess, Ponyo uses her father's magic to transform herself into a young girl and quickly falls in love with Sosuke, but the use of such powerful sorcery causes a dangerous imbalance in the world. As the moon steadily draws nearer to the earth and Ponyo's father sends the ocean's mighty waves to find his daughter, the two children embark on an adventure of a lifetime to save the world and fulfill Ponyo's dreams of becoming human.",
       director: "Hayao Miyazaki",
       producer: "Toshio Suzuki",
-      poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/5/50/Ponyo_on_the_Cliff_by_the_Sea.jpg",
+      poster: "https://m.media-amazon.com/images/I/91Kx1QuEcEL._AC_SL1500_.jpg",
       release_date: "2008",
       rt_score: "92",
+      genre: "Adventure, Fantasy, Emotional, Romance",
       people: [
         {
           id: "a10f64f3-e0b6-4a94-bf30-87ad8bc51607",
@@ -1864,6 +1877,7 @@ export default {
         "https://m.media-amazon.com/images/M/MV5BZDY3ZGI0ZDAtMThlNy00MzAxLTg4YjAtNjkwYTkxNmQ4MjdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       release_date: "2010",
       rt_score: "95",
+      genre: "Adventure, Fantasy",
       people: [
         {
           id: "89026b3a-abc4-4053-ab1a-c6d2eea68faa",
@@ -1976,9 +1990,10 @@ export default {
       director: "Gorō Miyazaki",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZmFjMTYwODAtMTUzZi00NWUzLWIzMjUtYTNiZTE2MzNlMjNiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       release_date: "2011",
       rt_score: "83",
+      genre: "Drama, Romance, Comedy",
       people: [
         {
           id: "6a486237-c503-4221-b834-1862f200e939",
@@ -2082,9 +2097,10 @@ export default {
       director: "Hayao Miyazaki",
       producer: "Toshio Suzuki",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg",
+        "https://www.panteracine.com/wp-content/uploads/2019/05/the-wind-rises.jpg",
       release_date: "2013",
       rt_score: "89",
+      genre: "Drama, Emotional",
       people: [
         {
           id: "97746fd8-1875-4331-8bc6-f43ae25501cd",
@@ -2202,9 +2218,10 @@ export default {
       director: "Isao Takahata",
       producer: "Yoshiaki Nishimura",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6410d0a9aeb1ef18c7d54d6251ee275d37c07ad73727caf4ec2b0e219c23b797._RI_V_TTW_.jpg",
       release_date: "2013",
       rt_score: "100",
+      genre: "Drama, Fantasy",
       people: [
         {
           id: "a8b338c0-e586-4c1c-8857-f33540d0d4d7",
@@ -2308,9 +2325,10 @@ export default {
       director: "Hiromasa Yonebayashi",
       producer: "Yoshiaki Nishimura",
       poster:
-        "https://static.wikia.nocookie.net/studio-ghibli/images/7/7a/When_Marnie_Was_There.jpg",
+        "https://m.media-amazon.com/images/M/MV5BZTlmYTJmMWEtNDRhNy00ODc1LTg2OTMtMjk2ODJhNTA4YTE1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       release_date: "2014",
       rt_score: "92",
+      genre: "Drama, Fantasy, Emotional",
       people: [
         {
           id: "4a6a60d1-cb07-464f-889c-fecaff19b4ef",

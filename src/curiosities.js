@@ -1,3 +1,4 @@
+import { calculateAverage } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 //chart
 
@@ -15,7 +16,7 @@ const myChart = new Chart(ctx, {
     datasets: [
       {
         label: "",
-        data: [12, 19, 3, 5, 2, 3],
+        data: calculateAverage(),
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
           "rgba(54, 162, 235, 0.2)",
@@ -38,6 +39,11 @@ const myChart = new Chart(ctx, {
   },
   options: {
     maintainAspectRatio: false,
+    legend: {
+      labels: {
+        boxWidth: 0,
+      },
+    },
     scales: {
       y: {
         beginAtZero: true,
@@ -45,3 +51,26 @@ const myChart = new Chart(ctx, {
     },
   },
 });
+
+// data
+
+let characterArray = calculateAverage();
+let output = "";
+for (let i = 0; i < data.films.length; i++) {
+  output =
+    output +
+    `<div class="characterData">
+          <figure class="circleMovieContainer">
+            <img
+              alt="Portada de ${data.films[i].title}"
+              class="circleMovie"
+              src="${data.films[i].poster}"
+            />
+          </figure>
+          <span class="characterDataText"
+            >${data.films[i].title} has ${characterArray[i]} characters
+          </span>
+        </div>`;
+}
+
+document.getElementById("characterDataContainer").innerHTML = output;
