@@ -12,7 +12,7 @@ export default {
         "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
       release_date: "1986",
       rt_score: "95",
-      people: [
+      people1: [
         {
           id: "fe93adf2-2f3a-4ec4-9f68-5422f1b87c01",
           name: "Pazu",

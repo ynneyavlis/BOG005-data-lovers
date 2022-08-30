@@ -494,7 +494,7 @@ footer {
 .caja1 {
   width: 40%;
 }
-.peoplesky {
+.people1 {
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -549,3 +549,36 @@ footer {
     height: 60vh;
   }
 }
+
+.boton{
+  background-color: rgb(247, 245, 245);
+  color: #1583b6;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 6px;
+  width: 185px;
+  margin-left: 40px;
+}
+.botones a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 13px;}
+
+.botones{ 
+  background-color: #81d5c9;
+  width: 185px;
+  margin-left: 40px;
+  display: none;
+ }
+.botones a:hover{ 
+  background-color: #ceeee9;}
+
+.desplegable :hover .botones{ 
+display: block;
+}
+
+.desplegable{ 
+ position: absolute;
+  }
