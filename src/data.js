@@ -7,7 +7,7 @@ export const calculateAverage = () => {
     let numberCharacters = movie.people.length;
     people_movie.push(numberCharacters);
   }
-  console.log(people_movie);
+
   return people_movie;
 };
 

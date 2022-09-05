@@ -19,9 +19,10 @@ html {
 
 body {
   background-image: linear-gradient(
-    #09082c 20%,
+    90deg,
+    #110d2f 20%,
     #46157e 60%,
-    rgb(255, 229, 249) 90%
+    rgb(124, 224, 252) 90%
   );
   font-family: "Ubuntu";
 }
@@ -195,6 +196,41 @@ header {
   color: #591f64;
 }
 
+.boton {
+  background-color: rgb(247, 245, 245);
+  color: #1583b6;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 6px;
+  width: 185px;
+  margin-left: 40px;
+}
+.botones a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 13px;
+}
+
+.botones {
+  background-color: #81d5c9;
+  width: 185px;
+  margin-left: 40px;
+  display: none;
+}
+.botones a:hover {
+  background-color: #ceeee9;
+}
+
+.desplegable :hover .botones {
+  display: block;
+}
+
+.desplegable {
+  position: absolute;
+}
+
 .welcomeContainer {
   display: flex;
   justify-content: center;
@@ -305,6 +341,7 @@ header {
   text-align: center;
   background-color: #591f64;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: 400px) {
@@ -318,6 +355,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
+  pointer-events: none;
 }
 
 .movieImg {
@@ -339,12 +377,14 @@ header {
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
+  pointer-events: none;
 }
 
 .titleMovie {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 footer {
@@ -444,7 +484,7 @@ footer {
 
 .iconBackImg {
   font-size: 50px;
-  color: #f97373;
+  color: #ffffff;
 }
 
 .aboutTextContainer {
@@ -456,7 +496,10 @@ footer {
 .aboutText {
   width: 80%;
   text-align: justify;
-  padding-right: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 800px) {
@@ -491,36 +534,85 @@ footer {
   }
 }
 
+/* movie page */
+
 .Movi1Container {
   display: flex;
-  margin: 5%;
-  line-height: 1.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #46157e;
+  padding: 20px 0px;
+  margin-top: 5px;
+}
+
+@media (min-width: 600px) {
+  .Movi1Container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 .Movie1Sky {
-  margin-right: 3%;
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 40px;
 }
+@media (min-width: 600px) {
+  .Movie1Sky {
+    width: 250px;
+    padding: 0px 20px;
+  }
+}
+
 .caja1 {
-  width: 40%;
+  width: 80%;
+  text-align: justify;
+  color: #fff;
 }
+
+@media (min-width: 600px) {
+  .caja1 {
+    width: 250px;
+  }
+}
+
+.titlesMovie {
+  font-size: 40px;
+  font-family: "ubuntu";
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 500px;
+  margin-left: 100px;
+}
+
 .peoplesky {
   color: #ffffff;
   display: flex;
   justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
+
 .people {
+  width: 80%;
   max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #1583b6;
+  background-color: #8177d0;
   border-radius: 20px;
   padding-bottom: 20px;
 }
 .peopleImg {
   margin-top: 10%;
-  width: 70%;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 20px;
 }
 
 /* curiosities */
@@ -534,6 +626,7 @@ footer {
 .curiositiesText {
   width: 80%;
   text-align: justify;
+  color: #fff;
 }
 
 @media (min-width: 800px) {
@@ -559,7 +652,7 @@ footer {
 }
 
 #characterDataContainer {
-  background-color: #feeaef;
+  background-color: #591f64;
   margin: 10px;
   border-radius: 10px;
 }
@@ -585,7 +678,7 @@ footer {
 
 .characterData::after {
   content: "";
-  background-color: #17786a;
+  background-color: #ffffff;
   position: absolute;
   top: calc(100% + 2px);
   left: 0px;
@@ -617,17 +710,11 @@ footer {
   text-align: center;
   width: 50%;
   font-family: "Fira Sans";
-  color: #f97373;
+  color: #fff;
 }
 
 @media (min-width: 900px) {
   .characterDataText {
     width: auto;
   }
-}
-
-/* filter */
-
-.filter {
-  display: none;
 }
