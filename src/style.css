@@ -756,3 +756,13 @@ footer {
 .carouselNext {
   right: 10px;
 }
+.botones a:hover {
+  background-color: #ceeee9;
+}
+
+.desplegable :hover .botones {
+  display: block;
+}
+.desplegable {
+  position: absolute;
+}
