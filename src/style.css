@@ -19,9 +19,10 @@ html {
 
 body {
   background-image: linear-gradient(
-    #09082c 20%,
+    90deg,
+    #110d2f 20%,
     #46157e 60%,
-    rgb(255, 229, 249) 90%
+    rgb(124, 224, 252) 90%
   );
   font-family: "Ubuntu";
 }
@@ -64,6 +65,7 @@ header {
 
 .iconImg {
   font-size: 40px;
+  color: #fff;
 }
 
 .navegation {
@@ -195,6 +197,31 @@ header {
   color: #591f64;
 }
 
+.sortContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+#sortAncient,
+#sortRecent {
+  border: none;
+  border-radius: 15px;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  /* background-color: #8177d0; */
+  color: #46157e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sortContainer > button:hover {
+  background-color: #591f64;
+}
+
 .welcomeContainer {
   display: flex;
   justify-content: center;
@@ -305,6 +332,7 @@ header {
   text-align: center;
   background-color: #591f64;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: 400px) {
@@ -318,6 +346,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
+  pointer-events: none;
 }
 
 .movieImg {
@@ -339,12 +368,14 @@ header {
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
+  pointer-events: none;
 }
 
 .titleMovie {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  pointer-events: none;
 }
 
 footer {
@@ -389,7 +420,7 @@ footer {
 }
 
 .goUp > a {
-  color: #f08cca;
+  color: #46157e;
 }
 
 /* About */
@@ -444,7 +475,7 @@ footer {
 
 .iconBackImg {
   font-size: 50px;
-  color: #f97373;
+  color: #ffffff;
 }
 
 .aboutTextContainer {
@@ -456,7 +487,10 @@ footer {
 .aboutText {
   width: 80%;
   text-align: justify;
-  padding-right: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 800px) {
@@ -491,36 +525,101 @@ footer {
   }
 }
 
+/* movie page */
+
 .Movi1Container {
   display: flex;
-  margin: 5%;
-  line-height: 1.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #46157e;
+  padding: 20px 0px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .Movi1Container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 .Movie1Sky {
-  margin-right: 3%;
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 40px;
 }
+@media (min-width: 600px) {
+  .Movie1Sky {
+    width: 250px;
+    padding: 0px 20px;
+  }
+}
+
 .caja1 {
-  width: 40%;
+  width: 80%;
+  text-align: justify;
+  color: #fff;
 }
-.people1 {
+
+@media (min-width: 600px) {
+  .caja1 {
+    width: 350px;
+  }
+}
+
+.TotoroCharacter {
+  display: none;
+}
+
+@media (min-width: 950px) {
+  .TotoroCharacter {
+    display: block;
+    position: absolute;
+    width: 350px;
+    right: 10px;
+    top: 20px;
+  }
+}
+
+.titlesMovie {
+  font-size: 40px;
+  font-family: "ubuntu";
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.peoplesky {
   color: #ffffff;
   display: flex;
   justify-content: center;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0px 40px;
 }
+
 .people {
+  width: 80%;
   max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #1583b6;
+  background-color: #8177d0;
   border-radius: 20px;
   padding-bottom: 20px;
 }
 .peopleImg {
   margin-top: 10%;
-  width: 70%;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 20px;
 }
 
 /* curiosities */
@@ -534,6 +633,7 @@ footer {
 .curiositiesText {
   width: 80%;
   text-align: justify;
+  color: #fff;
 }
 
 @media (min-width: 800px) {
@@ -559,7 +659,7 @@ footer {
 }
 
 #characterDataContainer {
-  background-color: #feeaef;
+  background-color: #591f64;
   margin: 10px;
   border-radius: 10px;
 }
@@ -585,7 +685,7 @@ footer {
 
 .characterData::after {
   content: "";
-  background-color: #17786a;
+  background-color: #ffffff;
   position: absolute;
   top: calc(100% + 2px);
   left: 0px;
@@ -617,7 +717,7 @@ footer {
   text-align: center;
   width: 50%;
   font-family: "Fira Sans";
-  color: #f97373;
+  color: #fff;
 }
 
 @media (min-width: 900px) {
@@ -626,40 +726,43 @@ footer {
   }
 }
 
-/* filter */
+/* carousel */
 
-.filter {
-  display: none;
+.carouselList {
+  cursor: pointer !important;
 }
 
-.boton{
-  background-color: rgb(247, 245, 245);
-  color: #1583b6;
+.carouselContainer {
+  position: relative;
+}
+
+.carouselBack,
+.carouselNext {
+  position: absolute;
+  font-size: 40px;
   border: none;
-  padding: 16px;
-  font-size: 18px;
-  border-radius: 6px;
-  width: 185px;
-  margin-left: 40px;
+  top: calc(50% - 10px);
+  cursor: pointer;
+  text-align: center;
+  background: none;
+  line-height: 30px;
+  color: #fff;
 }
-.botones a{
-  text-decoration: none;
-  color: black;
+
+.carouselBack {
+  left: 10px;
+}
+
+.carouselNext {
+  right: 10px;
+}
+.botones a:hover {
+  background-color: #ceeee9;
+}
+
+.desplegable :hover .botones {
   display: block;
-  padding: 13px;}
-
-.botones{ 
-  background-color: #81d5c9;
-  width: 185px;
-  margin-left: 40px;
-  display: none;
- }
-.botones a:hover{ 
-  background-color: #ceeee9;}
-
-.desplegable :hover .botones{ 
-display: block;
 }
-.desplegable{ 
- position: absolute;
-  }
+.desplegable {
+  position: absolute;
+}

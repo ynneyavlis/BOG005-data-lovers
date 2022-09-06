@@ -7,7 +7,7 @@ export const calculateAverage = () => {
     let numberCharacters = movie.people.length;
     people_movie.push(numberCharacters);
   }
-  console.log(people_movie);
+
   return people_movie;
 };
 
@@ -29,4 +29,32 @@ export const GenreFilters = (genre) => {
     movie.genre.toLowerCase().includes(genreText)
   );
   return movie;
+};
+
+// sort
+
+export const sortDateRecent = (datesArray) => {
+  return datesArray.sort((a, b) => {
+    if (a.release_date < b.release_date) {
+      return -1;
+    }
+
+    if (a.release_date > b.release_date) {
+      return 1;
+    }
+    return 0;
+  });
+};
+
+export const sortDateAncient = (datesArray) => {
+  return datesArray.sort((a, b) => {
+    if (a.release_date < b.release_date) {
+      return 1;
+    }
+
+    if (a.release_date > b.release_date) {
+      return -1;
+    }
+    return 0;
+  });
 };
