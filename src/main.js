@@ -1,21 +1,10 @@
 import data from "./data/ghibli/ghibli.js";
-import { GenreFilters } from "./data.js";
-import { searchFilters } from "./data.js";
-
-// Carousel
-
-window.addEventListener("load", function () {
-  new Glider(document.querySelector(".peoplesky"), {
-    slidesToScroll: 4,
-    slidesToShow: 4,
-    draggable: true,
-    dots: ".dots",
-    arrows: {
-      prev: ".glider-prev",
-      next: ".glider-next",
-    },
-  });
-});
+import {
+  sortDateRecent,
+  sortDateAncient,
+  GenreFilters,
+  searchFilters,
+} from "./data.js";
 
 //responsive
 let menu = document.getElementsByClassName("menu")[0];
@@ -106,17 +95,18 @@ function dataMovie(e) {
                ><b>Score: &#9733; &#9733; &#9733; &#9733; &#9733;</b> ${clickedMovie.rt_score}</span
              ><br />
            </div>
+           <img alt="Imagen de Totoro" class="TotoroCharacter" src="img/totoroCharacter.png" />
          </section>`;
 
   let carouselOpen = `<div class="carousel">
     <div class="carouselContainer">
-     <button aria-label="Back" class="carouselArrow">
-      <i class="fi fi-rr-angle-left"></i>
-     </button>
      <div class="carouselList">`;
 
   let carouselClose = `</div>
-           <button aria-label="Next" class="carouselArrow">
+           <button aria-label="prev" class="carouselBack">
+             <i class="fi fi-rr-angle-left"></i>
+           </button>
+           <button aria-label="next" class="carouselNext">
             <i class="fi fi-rr-angle-right"></i>
            </button>
           </div>
@@ -210,10 +200,29 @@ function dataMovie(e) {
     peopleInformation +
     carouselClose +
     locationsText +
+    // carouselOpen +
     locationsInformation +
+    // carouselClose +
     vehiclesText +
+    // carouselOpen +
     vehiclesInformation +
+    // carouselClose +
     footerInformation;
+
+  // Carousel
+  const carousel = document.querySelectorAll(".carouselList");
+  for (let nodo of carousel) {
+    new Glider(nodo, {
+      slidesToScroll: 3,
+      slidesToShow: 3,
+      draggable: true,
+      dots: ".carouselIndicators",
+      arrows: {
+        prev: ".carouselBack",
+        next: ".carouselNext",
+      },
+    });
+  }
 }
 
 // search filter
@@ -287,4 +296,63 @@ function test2(e) {
 const genreIcons = document.getElementsByClassName("genreIcon");
 for (let nodo of genreIcons) {
   nodo.addEventListener("click", test2);
+}
+
+//Sort
+
+const buttonRecent = document.getElementById("sortRecent");
+const buttonAncient = document.getElementById("sortAncient");
+
+buttonRecent.addEventListener("click", sortRecent);
+
+function sortRecent(e) {
+  const sortDate = sortDateRecent(data.films);
+  let output = "";
+  for (let i = 0; i < sortDate.length; i++) {
+    output =
+      output +
+      `<div class="movie" id=${sortDate[i].id}>
+          <figure>
+            <img
+              alt="Portada de ${sortDate[i].title}"
+              class="movieImg"
+              src="${sortDate[i].poster}"/>
+          </figure>
+          <span class="titleMovie">${sortDate[i].title}</span>
+          <span class="fecha">${sortDate[i].release_date}</span>
+          </div>`;
+  }
+  document.getElementById("movieContainer__2").innerHTML = output;
+
+  let targetMovie = document.getElementsByClassName("movie");
+  for (let nodo of targetMovie) {
+    nodo.addEventListener("click", dataMovie);
+  }
+}
+
+buttonAncient.addEventListener("click", sortAncient);
+
+function sortAncient(e) {
+  const sortDate = sortDateAncient(data.films);
+  let output = "";
+  for (let i = 0; i < sortDate.length; i++) {
+    output =
+      output +
+      `<div class="movie" id=${sortDate[i].id}>
+          <figure>
+            <img
+              alt="Portada de ${sortDate[i].title}"
+              class="movieImg"
+              src="${sortDate[i].poster}"/>
+          </figure>
+          <span class="titleMovie">${sortDate[i].title}</span>
+          <span class="fecha">${sortDate[i].release_date}</span>
+          </div>`;
+  }
+  document.getElementById("movieContainer__2").innerHTML = output;
+
+  let targetMovie = document.getElementsByClassName("movie");
+  for (let nodo of targetMovie) {
+    nodo.addEventListener("click", dataMovie);
+  }
 }

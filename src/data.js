@@ -30,3 +30,31 @@ export const GenreFilters = (genre) => {
   );
   return movie;
 };
+
+// sort
+
+export const sortDateRecent = (datesArray) => {
+  return datesArray.sort((a, b) => {
+    if (a.release_date < b.release_date) {
+      return -1;
+    }
+
+    if (a.release_date > b.release_date) {
+      return 1;
+    }
+    return 0;
+  });
+};
+
+export const sortDateAncient = (datesArray) => {
+  return datesArray.sort((a, b) => {
+    if (a.release_date < b.release_date) {
+      return 1;
+    }
+
+    if (a.release_date > b.release_date) {
+      return -1;
+    }
+    return 0;
+  });
+};

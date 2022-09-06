@@ -65,6 +65,7 @@ header {
 
 .iconImg {
   font-size: 40px;
+  color: #fff;
 }
 
 .navegation {
@@ -196,39 +197,29 @@ header {
   color: #591f64;
 }
 
-.boton {
-  background-color: rgb(247, 245, 245);
-  color: #1583b6;
+.sortContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+#sortAncient,
+#sortRecent {
   border: none;
-  padding: 16px;
-  font-size: 18px;
-  border-radius: 6px;
-  width: 185px;
-  margin-left: 40px;
-}
-.botones a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding: 13px;
+  border-radius: 15px;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  /* background-color: #8177d0; */
+  color: #46157e;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.botones {
-  background-color: #81d5c9;
-  width: 185px;
-  margin-left: 40px;
-  display: none;
-}
-.botones a:hover {
-  background-color: #ceeee9;
-}
-
-.desplegable :hover .botones {
-  display: block;
-}
-
-.desplegable {
-  position: absolute;
+.sortContainer > button:hover {
+  background-color: #591f64;
 }
 
 .welcomeContainer {
@@ -429,7 +420,7 @@ footer {
 }
 
 .goUp > a {
-  color: #f08cca;
+  color: #46157e;
 }
 
 /* About */
@@ -544,6 +535,8 @@ footer {
   background-color: #46157e;
   padding: 20px 0px;
   margin-top: 5px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 @media (min-width: 600px) {
@@ -574,7 +567,21 @@ footer {
 
 @media (min-width: 600px) {
   .caja1 {
-    width: 250px;
+    width: 350px;
+  }
+}
+
+.TotoroCharacter {
+  display: none;
+}
+
+@media (min-width: 950px) {
+  .TotoroCharacter {
+    display: block;
+    position: absolute;
+    width: 350px;
+    right: 10px;
+    top: 20px;
   }
 }
 
@@ -583,8 +590,7 @@ footer {
   font-family: "ubuntu";
   font-weight: bold;
   color: #ffffff;
-  padding-top: 500px;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 .peoplesky {
@@ -592,8 +598,9 @@ footer {
   display: flex;
   justify-content: center;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0px 40px;
 }
 
 .people {
@@ -717,4 +724,35 @@ footer {
   .characterDataText {
     width: auto;
   }
+}
+
+/* carousel */
+
+.carouselList {
+  cursor: pointer !important;
+}
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselBack,
+.carouselNext {
+  position: absolute;
+  font-size: 40px;
+  border: none;
+  top: calc(50% - 10px);
+  cursor: pointer;
+  text-align: center;
+  background: none;
+  line-height: 30px;
+  color: #fff;
+}
+
+.carouselBack {
+  left: 10px;
+}
+
+.carouselNext {
+  right: 10px;
 }
